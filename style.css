@@ -11,6 +11,7 @@ body{
   font-family:Raleway;
   font-weight:500;
   background-color:rgb(31, 41, 48);
+  
 }
 
 /*navbar css styleing*/
@@ -64,6 +65,8 @@ body{
   position:absolute;
   top:40vh;
 }
+
+
 /*navbar css styling*/
 
 
@@ -185,9 +188,8 @@ figure {
   transition-duration: 0.5s, 0.5s, 0s;
   padding:3em;
   font-weight:800;
-  background-color:white;
   border-radius:1em;
-  background-color:rgb(194, 194, 194);
+  background-color:rgb(235, 235, 235);
   text-align: center;
 }
 
@@ -203,22 +205,38 @@ h4{
 /*container-box*/
 
 
-/*announcement grid*/
-.footer-bg{
-  /* The image used */
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-  background-image: url("img/cover_4.png");
-
-  /* Full height */
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+/*Research Highlights*/
+.RH-bg{
+    /* Full height */
+    height: 70vh; 
+    position:relative;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.1;
 }
-/*announcement grid*/
+.RH-bg::before {
+  content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(to top ,#002f4b00,rgb(31, 41, 48));
+
+}
+
+.RH-col{
+  display:block;
+  background-color:rgb(36, 45, 51);
+  margin:2em;
+  color:white;
+  font-size:200%;
+  text-align:center;
+  padding:3em;
+}
+/*Research Highlights*/
 
 
 
